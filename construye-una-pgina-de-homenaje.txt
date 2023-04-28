@@ -1,0 +1,213 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Tribute page to Leonardo da Vinci">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Leonardo da Vinci</title>
+  </head>
+  <body>
+    <main id="main">
+    <header class="header">
+      <h1 id="title">► Leonardo da Vinci ◄</h1>
+      <p class="subtitle">The Homo Universalis<p>
+        <div id="img-div">
+        <img id="image" src="https://personajeshistoricos.com/wp-content/uploads/2018/01/Leonardo-Da-Vinci-1-1024x576.jpg" alt="Painting of Leonardo da Vinci">
+        <figcaption id="img-caption">Anonymous portrait, 17th century oil painting, Uffizi, Florence</figcaption>
+        </header>
+        <div id="tribute-info">
+          <hr>
+          <p class="bio">Leonardo da Vinci, (Italian: “Leonardo from Vinci”) (born April 15, 1452, Anchiano, near Vinci, Republic of Florence [Italy]—died May 2, 1519, Cloux [now Clos-Lucé], France), Italian painter, draftsman, sculptor, architect, and engineer whose skill and intelligence, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. His Last Supper (1495–98) and Mona Lisa (c. 1503–19) are among the most widely popular and influential paintings of the Renaissance. His notebooks reveal a spirit of scientific inquiry and a mechanical inventiveness that were centuries ahead of their time.
+<br>
+<br>
+            The unique fame that Leonardo enjoyed in his lifetime and that, filtered by historical criticism, has remained undimmed to the present day rests largely on his unlimited desire for knowledge, which guided all his thinking and behaviour. An artist by disposition and endowment, he considered his eyes to be his main avenue to knowledge; to Leonardo, sight was man’s highest sense because it alone conveyed the facts of experience immediately, correctly, and with certainty. Hence, every phenomenon perceived became an object of knowledge, and saper vedere (“knowing how to see”) became the great theme of his studies. He applied his creativity to every realm in which graphic representation is used: he was a painter, sculptor, architect, and engineer. But he went even beyond that. He used his superb intellect, unusual powers of observation, and mastery of the art of drawing to study nature itself, a line of inquiry that allowed his dual pursuits of art and science to flourish.
+          </p>
+          </div>
+  <hr>
+  <h2 id="title-2">The Artist</h2>
+  <div id="show">
+  <div id="paintings">
+    <div class="painting-1">
+      <img src="https://historia.nationalgeographic.com.es/medio/2022/12/01/gioconda_08b23ea1_221201125801_800x800.jpg" alt="Mona Lisa">
+      <figcaption class="painting-caption">The Mona Lisa <span>1503–1506</span></figcaption>
+    </div>
+    <div class="painting-2">
+      <img src="https://cdn.culturagenial.com/es/imagenes/1200px-the-last-supper-leonardo-da-vinci-high-resolution-32x16-cke.jpg" alt="The Last Supper">
+      <figcaption class="painting-caption">The Last Supper <span>1495–1498</span></figcaption>
+    </div>
+    <div class="painting-3">
+      <img src="https://media.traveler.es/photos/613766edd4923f67e298e6b2/master/w_1600,c_limit/166635.jpg" alt="Lady with an Ermine">
+      <figcaption class="painting-caption">Lady with an Ermine <span>1489–1491</span></figcaption>
+    </div>
+  </div>
+        </div>
+        </div>
+  
+    <p class="footer" >If you have time, you should read more about this incredible human being on his <a href="https://www.britannica.com/biography/Leonardo-da-Vinci" target="_blank" id="tribute-link">Britannica entry</a>.</p>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+#title {
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  text-align: center; 
+  color: #0f1019;
+  margin-top: 40px;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 0px;
+  text-align: center;
+  background-color: #0f1019;
+  color: #d8d4c8;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#img-div {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#image {
+  display: block;
+  width: 900px;
+  height: auto;
+  margin: 0 auto 10px;
+  max-width: 100%;
+  border-radius: 200px;
+  border: 2px solid #0f1019;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#tribute-info {
+  margin: 30px 0;
+}
+
+hr {
+  height: 2px;
+  background-color: #1c232b;
+  width: 80%;
+}
+
+.bio {
+  width: 60%;
+  font-size: 16px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+#title-2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+#show {
+  width: 100vw;
+  background-color: #0f1019;
+}
+
+#paintings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.painting-1 {
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+}
+
+.painting-1 img {
+  width: 100%;
+  border-radius: 85px;
+  border: 2px solid #d8d4c8;
+}
+
+.painting-2 {
+  width: 400px;
+  height: 200px;
+  padding-top: 30px;
+}
+
+.painting-2 img {
+  border-radius: 300px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #d8d4c8;
+}
+
+.painting-3 {
+  width: 230px;
+  height: 220px;
+  padding-top: 30px;
+}
+
+.painting-3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 85px;
+  border: 2px solid #d8d4c8;
+}
+
+.painting-caption {
+  color: #d8d4c8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+span {
+  font-size: 11px;
+  font-style: oblique;
+}
+
+.footer {
+  font-size: 25px;
+  text-align: center;
+}
+
+** end of undefined **
+
